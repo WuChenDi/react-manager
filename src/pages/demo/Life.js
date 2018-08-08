@@ -33,7 +33,7 @@ export default class Life extends React.Component {
       <button onClick={this.handleAdd}>点击一下</button>
       <button onClick={this.handleClick.bind(this)}>点击一下</button>
       <p>{this.state.count}</p>
-      <Child name="wcd"></Child>
+      <Child name={this.state.count}></Child>
     </div>
   }
 }
