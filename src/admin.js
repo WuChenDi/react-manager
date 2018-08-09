@@ -15,7 +15,7 @@ export default class Admin extends React.Component {
             Header
           </Header>
           <Row>
-
+            Content
           </Row>
           <Footer>
             Footer
