@@ -1,6 +1,6 @@
 import React from 'react'
 import Child from './Child'
-import {Button} from 'antd'
+import {Button,Input} from 'antd'
 import './index.less'
 // import 'antd/dist/antd.css'
 
