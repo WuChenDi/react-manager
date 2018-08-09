@@ -12,15 +12,11 @@ export default class Admin extends React.Component {
           <NavLeft />
         </Col>
         <Col span="21">
-          <Header>
-            Header
-          </Header>
+          <Header />
           <Row>
             Content
           </Row>
-          <Footer>
-            Footer
-          </Footer>
+          <Footer />
         </Col>
       </Row>
     );
