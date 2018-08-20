@@ -16,9 +16,13 @@ export default class NavLeft extends React.Component{
   renderMenu = (data) =>{
     return data.map((item)=>{
       if(item.children){
-        this.renderMenu(item.children);
+        return (
+          <SubMenu title="item.title" key={item.key}>
+            {this.renderMenu(item.children)}
+          </SubMenu>
+        )
       }
-      return
+      return <Menu.Item title="{item.title} key={item.key}"></Menu.Item>
     })
   }
   render(){
