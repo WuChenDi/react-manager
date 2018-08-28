@@ -1,11 +1,11 @@
 import React from 'react'
-import {Menu,Icon} from 'antd';
+import { Menu, Icon } from 'antd';
 import MenuConfig from '../../config/menuConfig'
 import './index.less'
 const SubMenu = Menu.SubMenu;
 
-export default class NavLeft extends React.Component{
-  componentWillMount(){
+export default class NavLeft extends React.Component {
+  componentWillMount() {
     const menuTreeNode = this.renderMenu(MenuConfig);
 
     this.setState({
@@ -13,9 +13,9 @@ export default class NavLeft extends React.Component{
     })
   }
   // 菜单渲染
-  renderMenu = (data) =>{
-    return data.map((item)=>{
-      if(item.children){
+  renderMenu = (data) => {
+    return data.map((item) => {
+      if (item.children) {
         return (
           <SubMenu title="item.title" key={item.key}>
             {this.renderMenu(item.children)}
@@ -25,12 +25,12 @@ export default class NavLeft extends React.Component{
       return <Menu.Item title="{item.title} key={item.key}">{item.title}</Menu.Item>
     })
   }
-  render(){
-    return(
+  render() {
+    return (
       <div>
         <div>
           <div className="logo">
-            <img src="/assets/logo-ant.svg" alt=""/>
+            <img src="/assets/logo-ant.svg" alt="" />
             <h1>Imooc MS</h1>
           </div>
         </div>
