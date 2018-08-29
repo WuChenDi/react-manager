@@ -1,12 +1,19 @@
 import React from 'react'
-import {Row, Col} from "antd";
+import { Row, Col } from "antd";
 import './index.less'
-
+import Util from '../../utils/utils'
 export default class Header extends React.Component {
+  state = {};
   componentWillMount() {
     this.setState({
       userName: 'wuchendi'
     })
+    setInterval(() => {
+      let sysTime = Util.formateDate(new Date().getTime());
+      this.setState({
+        sysTime
+      })
+    }, 1000)
   }
   render() {
     return (
@@ -22,7 +29,7 @@ export default class Header extends React.Component {
             首页
           </Col>
           <Col span="20" className="weather">
-            <span className="date">2018-8-28</span>
+            <span className="date">{this.state.sysTime}</span>
             <span className="weather-detail">晴转多云</span>
           </Col>
         </Row>
