@@ -3,7 +3,7 @@ import { Row, Col } from "antd";
 import './index.less'
 import Util from '../../utils/utils'
 export default class Header extends React.Component {
-  state = {};
+  // state = {};
   componentWillMount() {
     this.setState({
       userName: 'wuchendi'
