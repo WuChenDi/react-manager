@@ -2,18 +2,31 @@ import React from 'react'
 import { Row, Col } from "antd";
 import './index.less'
 import Util from '../../utils/utils'
+import axios from '../../axios/index'
 export default class Header extends React.Component {
   // state = {};
   componentWillMount() {
     this.setState({
       userName: 'wuchendi'
     })
+    // 时间
     setInterval(() => {
       let sysTime = Util.formateDate(new Date().getTime());
       this.setState({
         sysTime
       })
     }, 1000)
+    this.getWeatherAPIData();
+  }
+
+  // 天气
+  getWeatherAPIData() {
+    let city = '广州'
+    axios.jsonp({
+      url: 'http://api.map.baidu.com/telematics/v3/weather?location=' + encodeURIComponent(city) + '&output=json&ak=3p49MVra6urFRGOT9s8UBWr2'
+    }).then(() => {
+      
+    })
   }
   render() {
     return (
