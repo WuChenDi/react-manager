@@ -1,5 +1,8 @@
 import React from 'react'
 import { HashRouter, Route, Link } from 'react-router-dom'
+import Main from './Main'
+import About from './about'
+import Topic from './topic'
 
 export default class Home extends React.Component {
   render() {
@@ -17,11 +20,11 @@ export default class Home extends React.Component {
               <Link to="/topics">Topics</Link>
             </li>
           </ul>
-          <hr/>
+          <hr />
           <Route path="/" component={Main}></Route>
+          <Route path="/about" component={About}></Route>
+          <Route path="/topic" component={Topic}></Route>
         </div>
-        <Route path="/about"></Route>
-        <Route path="/topic"></Route>
       </HashRouter>
     );
   }
