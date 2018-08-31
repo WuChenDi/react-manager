@@ -11,9 +11,9 @@ export default class IRouter extends React.Component {
     return (
       <Router>
         <Home>
-          <Route path="/" render={() =>
+          <Route path="/main" render={() =>
             <Main>
-              <Route path="/a" component={About}></Route>
+              <Route path="main/a" component={About}></Route>
               {/* <div>this is a sub child element</div> */}
             </Main>
           }></Route>
