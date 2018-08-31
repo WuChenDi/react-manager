@@ -8,13 +8,13 @@ export default class Home extends React.Component {
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Home1</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">About1</Link>
           </li>
           <li>
-            <Link to="/topic">Topic</Link>
+            <Link to="/topic">Topic1</Link>
           </li>
         </ul>
         <hr />
