@@ -23,7 +23,7 @@ export default class Home extends React.Component {
           <hr />
           {/* exact={true} 精确匹配 */}
           <Switch>
-            <Route path="/" component={Main}></Route>
+            <Route exact={true} path="/" component={Main}></Route>
             <Route path="/about" component={About}></Route>
             <Route path="/topic" component={Topic}></Route>
           </Switch>
