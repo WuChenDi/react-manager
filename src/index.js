@@ -4,8 +4,9 @@ import './index.css';
 // import App from './App';
 import Life from './pages/demo/Life';
 import Admin from './admin';
+import Router from './router'
 // import Home from './pages/route_demo/route1/Home';
-import Router from './pages/route_demo/route3/router';
+// import Router from './pages/route_demo/route3/router';
 
 import registerServiceWorker from './registerServiceWorker';
 
