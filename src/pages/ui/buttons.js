@@ -4,13 +4,20 @@ import './ui.less'
 export default class Buttons extends React.Component {
 
   state = {
-    loading: true
+    loading: true,
+    size: 'default'
   }
 
   handleCloseLoading = () => {
     this.setState({
       loading: false
     });
+  }
+
+  handleChange = (e) => {
+    this.setState({
+      size: e.target.value
+    })
   }
 
   render() {
@@ -45,15 +52,15 @@ export default class Buttons extends React.Component {
           </Button.Group>
         </Card>
         <Card title="按钮尺寸">
-          <Radio.Group>
+          <Radio.Group value={this.state.size} onChange={this.handleChange}>
             <Radio value="small">小</Radio>
             <Radio value="default">中</Radio>
             <Radio value="large">大</Radio>
           </Radio.Group>
-          <Button type="primary">Imooc</Button>
-          <Button>Imooc</Button>
-          <Button type="dashed">Imooc</Button>
-          <Button type="danger">Imooc</Button>
+          <Button type="primary" size={this.state.size}>Imooc</Button>
+          <Button size={this.state.size}>Imooc</Button>
+          <Button type="dashed" size={this.state.size}>Imooc</Button>
+          <Button type="danger" size={this.state.size}>Imooc</Button>
         </Card>
       </div>
     );
