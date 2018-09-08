@@ -15,6 +15,7 @@ export default class IRouter extends React.Component {
             <Admin>
               <Switch>
                 <Route path="/admin/ui/buttons" component={Buttons} />
+                <Route path="/admin/ui/modals" component={Buttons} /> 
                 <Route component={NoMatch} />
               </Switch>
             </Admin>
