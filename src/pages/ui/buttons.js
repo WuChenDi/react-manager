@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Button } from 'antd'
+import { Card, Button, Radio } from 'antd'
 import './ui.less'
 export default class Buttons extends React.Component {
 
@@ -37,6 +37,23 @@ export default class Buttons extends React.Component {
           <Button loading={this.state.loading}>点击加载</Button>
           <Button shape="circle" loading={this.state.loading}></Button>
           <Button type="primary" onClick={this.handleCloseLoading}>关闭</Button>
+        </Card>
+        <Card title="按钮组">
+          <Button.Group>
+            <Button type="primary" icon="left" style={{ marginRight: 0 }}>返回</Button>
+            <Button type="primary" icon="right">前进</Button>
+          </Button.Group>
+        </Card>
+        <Card title="按钮尺寸">
+          <Radio.Group>
+            <Radio value="small">小</Radio>
+            <Radio value="default">中</Radio>
+            <Radio value="large">大</Radio>
+          </Radio.Group>
+          <Button type="primary">Imooc</Button>
+          <Button>Imooc</Button>
+          <Button type="dashed">Imooc</Button>
+          <Button type="danger">Imooc</Button>
         </Card>
       </div>
     );
