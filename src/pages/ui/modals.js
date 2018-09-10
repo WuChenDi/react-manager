@@ -77,7 +77,7 @@ export default class Buttons extends React.Component {
             })
           }}
         >
-          <p>2018-9 React学习</p>
+          <p>年纪越大越会明白，少年时曾说过的话，不管多么情真意切，最后也终流于天真，但是有什么关系呢，那不代表它们就是谎言。我是真心希望，如你所言，在我之后，你再没有不能失去的东西。而我再爱上的人，也无一人像你一分。只愿你平安喜乐，愿我们今生，天涯永不再相见。</p>
         </Modal>
         <Modal
           title="React"
