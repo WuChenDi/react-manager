@@ -19,16 +19,15 @@ export default class Buttons extends React.Component {
   handleConfirm = (type) => {
     Modal[type]({
       title: '确认?',
-      content: '你确认你学会了React了吗?',
+      content: '民谣是最安静的角落,这句话你赞同吗?',
       onOk() {
-        console.log('OK')
+        console.log('Ok');
       },
       onCancel() {
-        console.log('Cancel')
+        console.log('Cancel');
       }
     })
   }
-
   render() {
     return (
       <div>
@@ -39,10 +38,10 @@ export default class Buttons extends React.Component {
           <Button type="primary" onClick={() => this.handleOpen('showModal4')}>水平垂直居中</Button>
         </Card>
         <Card title="信息确认框">
-          <Button type="primary" onClick={() => this.handleConfirm('Confirm')}>Confirm</Button>
-          <Button type="primary" onClick={() => this.handleConfirm('Info')}>Info</Button>
-          <Button type="primary" onClick={() => this.handleConfirm('Success')}>Success</Button>
-          <Button type="primary" onClick={() => this.handleConfirm('Warning')}>Warning</Button>
+          <Button type="primary" onClick={() => this.handleConfirm('confirm')}>Confirm</Button>
+          <Button type="primary" onClick={() => this.handleConfirm('info')}>Info</Button>
+          <Button type="primary" onClick={() => this.handleConfirm('success')}>Success</Button>
+          <Button type="primary" onClick={() => this.handleConfirm('warning')}>Warning</Button>
         </Card>
         <Modal
           title="React"
@@ -51,7 +50,8 @@ export default class Buttons extends React.Component {
             this.setState({
               showModal1: false
             })
-          }}>
+          }}
+        >
           <p>十个肉筋 十个板筋 四个腰子 四个鸡翅 二个烤蒜 二个小抄片 一盘花生 一盘毛豆 五瓶啤酒</p>
         </Modal>
         <Modal
