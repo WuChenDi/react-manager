@@ -52,7 +52,7 @@ export default class Buttons extends React.Component {
               showModal1: false
             })
           }}>
-          <p>Di-got</p>
+          <p>十个肉筋 十个板筋 四个腰子 四个鸡翅 二个烤蒜 二个小抄片 一盘花生 一盘毛豆 五瓶啤酒</p>
         </Modal>
         <Modal
           title="React"
@@ -65,7 +65,7 @@ export default class Buttons extends React.Component {
             })
           }}
         >
-          <p>2018-9 React学习</p>
+          <p>我喜欢网易云音乐，喜欢这里的每一个听众，他们明明没什么文字功底，读书写作文都全是抄的，但在这里，他们居然能瞎扯淡地写出这么多有水准的话。</p>
         </Modal>
         <Modal
           title="React"
@@ -89,7 +89,7 @@ export default class Buttons extends React.Component {
             })
           }}
         >
-          <p>2018-9 React学习</p>
+          <p>年轻时我想变成任何人，除了我自己</p>
         </Modal>
       </div>
     );
