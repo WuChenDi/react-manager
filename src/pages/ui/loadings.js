@@ -16,31 +16,31 @@ export default class Loadings extends React.Component {
         </Card>
         <Card title="内容遮罩" className="card-wrap">
           <Alert
-            message="React"
-            description="欢迎来到React高级实战课程"
+            message="Di-got"
+            description="美丽的代沫, 只一霎的烟火"
             type="info"
             style={{ marginBottom: 10 }}
           />
           <Spin>
             <Alert
-              message="React"
-              description="欢迎来到React高级实战课程"
+              message="Di-got"
+              description="I've been running with the wolves"
               type="warning"
               style={{ marginBottom: 10 }}
             />
           </Spin>
           <Spin tip="加载中...">
             <Alert
-              message="React"
-              description="欢迎来到React高级实战课程"
+              message="Di-got"
+              description="To get to you, to get to you"
               type="warning"
               style={{ marginBottom: 10 }}
             />
           </Spin>
           <Spin indicator={iconLoading}>
             <Alert
-              message="React"
-              description="欢迎来到React高级实战课程"
+              message="Di-got"
+              description="如果我们不曾相遇,我会是在哪里"
               type="warning"
             />
           </Spin>
